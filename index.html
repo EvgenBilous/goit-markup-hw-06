@@ -526,15 +526,72 @@
         </div>
       </div>
     </footer>
-    <div data-modal class="backdrop is-hidden">
-      <div class="modal">
+    <div data-modal class="backdrop">
+      <form class="modal">
         <button data-modal-close type="button" class="close-modal-button">
           <svg class="close-button-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-button"></use>
           </svg>
         </button>
-      </div>
+
+        <div class="modal-header">
+          Leave your contacts and we will call you back
+        </div>
+        <div class="all-labels">
+          <div class="name">
+            <label for="name" class="label">
+              <span>Name</span>
+              <input class="modal-field" id="name" type="text" autofocus />
+            </label>
+          </div>
+
+          <div class="phone">
+            <label for="phone" class="label">
+              <span>Phone</span>
+              <input class="modal-field" id="phone" type="text" />
+            </label>
+          </div>
+
+          <div class="email">
+            <label for="email" class="label">
+              <span>E-mail</span>
+              <input class="modal-field" id="email" type="text" />
+            </label>
+          </div>
+
+          <div class="comment">
+            <label for="comment" class="label">
+              <span>Comment</span>
+
+              <textarea
+                class="modal-comment"
+                id="comment"
+                type="text"
+                placeholder="Text Input"
+              >
+              </textarea>
+            </label>
+          </div>
+        </div>
+        <div class="checkbox">
+          <input
+            class="modal-checkbox"
+            id="checkbox"
+            type="checkbox"
+            name="checkbox"
+          />
+          <label class="checkbox-caption" for="checkbox">
+            I accept the terms and conditions of the
+            <a href="">Privacy Policy</a>
+          </label>
+        </div>
+
+        <div class="confirm-button">
+          <button type="submit" class="confirm-btn">Send</button>
+        </div>
+      </form>
     </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
