@@ -825,6 +825,9 @@ div.scrollmenu {
   margin-bottom: 16px;
 }
 
+.all-labels {
+  margin-bottom: 8px;
+}
 .label {
   display: block;
   font-size: 12px;
