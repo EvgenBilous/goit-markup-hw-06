@@ -860,10 +860,6 @@ div.scrollmenu {
   border-color: var(--iris);
 }
 
-.modal-field:focus + {
-  border-color: var(--iris);
-}
-
 .label-comment {
   margin-bottom: 16px;
 }
@@ -875,7 +871,7 @@ div.scrollmenu {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-  border: 1px solid rgba(46, 47, 66, 0.2);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
   padding: 8px 16px;
@@ -884,12 +880,13 @@ div.scrollmenu {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-field input:focus + .svg-icon {
+  border-color: var(--iris);
+}
 .modal-comment:focus {
   border-color: var(--iris);
 }
-.modal-comment:focus + .svg-icon {
-  border-color: var(--iris);
-}
+
 .modal-comment::placeholder {
   font-size: 12px;
   font-weight: 400;
@@ -907,6 +904,28 @@ div.scrollmenu {
   position: relative;
   top: -1px;
 }
+.modal-checkbox:checked {
+  background-color: var(--ocean);
+  border: none;
+  fill: var(--cloud);
+}
+
+.modal-checkbox:checked + .check-text span {
+  background-color: var(--ocean);
+  border: none;
+  fill: var(--cloud);
+}
+
+.modal-checkbox:focus + .check-text span {
+  border-color: var(--ocean);
+}
+.check-icon {
+}
+.modal-checkbox:checked + .checkbox-caption span {
+  background-color: var(--ocean);
+  border: none;
+  fill: var(--cloud);
+}
 .checkbox-caption {
   padding-left: 8px;
   font-size: 12px;
@@ -914,6 +933,18 @@ div.scrollmenu {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-slate);
+}
+
+.checkbox-text span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
 }
 
 .confirm-btn {
