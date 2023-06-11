@@ -993,3 +993,57 @@ div.scrollmenu {
   justify-content: center;
   fill: transparent;
 }
+
+.subscribe-header {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  margin-left: 80px;
+}
+
+.subscribe-form {
+  display: flex;
+  margin-left: 80px;
+}
+.subscribe-field {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: var(--white);
+}
+.subscribe-field::placeholder {
+  color: var(--white);
+}
+.subscribe-button {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  cursor: pointer;
+  background-color: var(--iris);
+  border: none;
+  border-radius: 4px;
+  margin-left: 24px;
+}
+
+.subscribe-svg {
+  margin-left: 16px;
+  fill: var(--white);
+}
