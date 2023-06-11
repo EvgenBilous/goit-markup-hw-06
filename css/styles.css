@@ -947,6 +947,10 @@ div.scrollmenu {
   fill: transparent;
 }
 
+.link-privacy {
+  color: var(--iris);
+}
+
 .confirm-btn {
   display: block;
   max-width: 169px;
