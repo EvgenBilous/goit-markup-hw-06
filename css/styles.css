@@ -859,6 +859,9 @@ div.scrollmenu {
 .modal-field:focus {
   border-color: var(--iris);
 }
+.modal-field input:focus + .svg-icon {
+  border-color: var(--iris);
+}
 
 .label-comment {
   margin-bottom: 16px;
@@ -880,8 +883,11 @@ div.scrollmenu {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-field input:focus + .svg-icon {
+.modal-field:focus {
   border-color: var(--iris);
+}
+.modal-field:focus + .svg-icon {
+  fill: var(--iris);
 }
 .modal-comment:focus {
   border-color: var(--iris);
@@ -891,6 +897,7 @@ div.scrollmenu {
   font-size: 12px;
   font-weight: 400;
   padding-bottom: 0;
+  color: grey;
 }
 .checkbox {
   display: flex;
@@ -974,10 +981,6 @@ div.scrollmenu {
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.svg-icon:focus {
-  fill: var(--iris);
 }
 .checkbox-span {
   display: inline-flex;
