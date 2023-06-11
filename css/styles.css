@@ -898,35 +898,18 @@ div.scrollmenu {
   justify-content: center;
   margin-bottom: 24px;
 }
+
 .modal-checkbox {
   width: 16px;
   height: 16px;
   position: relative;
   top: -1px;
 }
-.modal-checkbox:checked {
-  background-color: var(--ocean);
-  border: none;
-  fill: var(--cloud);
-}
 
-.modal-checkbox:checked + .check-text span {
-  background-color: var(--ocean);
-  border: none;
-  fill: var(--cloud);
-}
-
-.modal-checkbox:focus + .check-text span {
-  border-color: var(--ocean);
-}
-.check-icon {
-}
-.modal-checkbox:checked + .checkbox-caption span {
-  background-color: var(--ocean);
-  border: none;
-  fill: var(--cloud);
-}
 .checkbox-caption {
+  display: flex;
+  align-items: center;
+  position: relative;
   padding-left: 8px;
   font-size: 12px;
   color: var(--light-slate);
@@ -935,7 +918,7 @@ div.scrollmenu {
   color: var(--light-slate);
 }
 
-.checkbox-text span {
+.checkbox-caption span {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -945,6 +928,16 @@ div.scrollmenu {
   align-items: center;
   justify-content: center;
   fill: transparent;
+}
+
+.modal-checkbox:checked + .checkbox-caption span {
+  background-color: var(--ocean);
+  border: none;
+  fill: var(--cloud);
+}
+
+.modal-checkbox:focus + .check-caption span {
+  border-color: var(--ocean);
 }
 
 .link-privacy {
