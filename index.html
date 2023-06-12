@@ -524,17 +524,19 @@
             </li>
           </ul>
         </div>
+        <!-- Subscribe Form -->
         <div class="subscribe">
           <p class="subscribe-header">Subscribe</p>
           <form class="subscribe-form">
-            <label for="subscribe-email">
-              <input
-                id="subscribe-email"
-                name="email"
-                type="email"
-                placeholder="E-mail"
-              />
-            </label>
+            <label for="subscribe-email"> </label>
+            <input
+              id="subscribe-email"
+              name="email"
+              type="email"
+              placeholder="E-mail"
+              class="subscribe-field"
+            />
+
             <button class="subscribe-button" type="submit">
               Subscribe
               <svg class="subscribe-svg" width="24" height="24">
@@ -555,6 +557,7 @@
         <p class="modal-header">
           Leave your contacts and we will call you back
         </p>
+        <!-- Order Service Form -->
         <form>
           <!-- Name -->
           <div class="all-labels">
@@ -625,11 +628,8 @@
                 <svg class="check-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg> </span
-              >I accept the terms and conditions of the<a
-                class="link-privacy link"
-                href=""
-                >Privacy Policy</a
-              >
+              >I accept the terms and conditions of the
+              <a class="link-privacy link" href=""> Privacy Policy</a>
             </label>
           </div>
           <button type="submit" class="confirm-btn">Send</button>
