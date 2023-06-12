@@ -1006,10 +1006,8 @@ div.scrollmenu {
   margin-left: 80px;
   gap: 24px;
 }
-/* .subscribe-email {
-  display: flex;
-  position: relative;
-} */
+.subscribe-email {
+}
 .subscribe-field {
   width: 264px;
   height: 40px;
