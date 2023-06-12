@@ -900,7 +900,6 @@ div.scrollmenu {
   color: grey;
 }
 .checkbox {
-  display: flex;
   margin-top: 16px;
   justify-content: center;
   margin-bottom: 24px;
@@ -914,10 +913,8 @@ div.scrollmenu {
 }
 
 .checkbox-caption {
-  display: flex;
   align-items: center;
   position: relative;
-  padding-left: 8px;
   font-size: 12px;
   color: var(--light-slate);
   line-height: 1.17;
@@ -930,7 +927,6 @@ div.scrollmenu {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   margin-right: 8px;
-  display: flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
@@ -1010,8 +1006,12 @@ div.scrollmenu {
   margin-left: 56px;
   gap: 24px;
 }
-
+.subscribe-email {
+  display: flex;
+  position: relative;
+}
 .subscribe-field {
+  position: absolute;
   width: 264px;
   height: 40px;
   border: 1px solid #ffffff;
