@@ -1003,15 +1003,14 @@ div.scrollmenu {
 
 .subscribe-form {
   display: flex;
-  margin-left: 56px;
+  margin-left: 80px;
   gap: 24px;
 }
-.subscribe-email {
+/* .subscribe-email {
   display: flex;
   position: relative;
-}
+} */
 .subscribe-field {
-  position: absolute;
   width: 264px;
   height: 40px;
   border: 1px solid #ffffff;
